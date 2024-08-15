@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+  margin-bottom: 5px;
+}
+
+.card-container .book {
+  margin: 20px;
+}
+
+.card-container .book .book-title {
+  font-weight: bold;
+}
+
+.card-container .book .book-author {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.card-container .book .book-year {
+  font-size: 12px;
+}
+
+.btn {
+  margin: 5px;
+}

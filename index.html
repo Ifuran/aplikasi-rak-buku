@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://i.pinimg.com/564x/0f/56/d4/0f56d4039e7281f02800f0d16a0b9ce9.jpg"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aplikasi Rak Buku</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="bg-success text-center">
+      <div class="container-md">
+        <h3 class="text-white fw-bold">
+          <i class="ri-book-fill"></i> Aplikasi Rak Buku
+        </h3>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-wrapper m-3 border border-success border-3 rounded">
+            <div class="text-center bg-success text-light fs-5 py-2 fw-bolder">
+              <i class="ri-book-fill"></i> Masukkan Buku Baru
+            </div>
+            <div class="book-form-wrapper">
+              <form class="book-form m-3" action="#" id="form">
+                <div class="mb-3">
+                  <label for="bookTitle" class="form-label fw-bold text-success"
+                    >Judul</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control border border-success"
+                    id="bookTitle"
+                    placeholder="Judul buku"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="bookAuthor"
+                    class="form-label fw-bold text-success"
+                    >Penulis</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control border border-success"
+                    id="bookAuthor"
+                    placeholder="Penulis buku"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="bookYear" class="form-label fw-bold text-success"
+                    >Tahun</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control border border-success"
+                    id="bookYear"
+                    placeholder="ex: 2023"
+                    required
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input border border-success"
+                    id="isComplete"
+                  />
+                  <label
+                    class="form-check-label text-success fw-bold"
+                    for="isComplete"
+                    >Sudah baca?</label
+                  >
+                </div>
+                <div class="mb-3 d-block">
+                  <button type="submit" class="btn btn-success w-100">
+                    Masukkan
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row m-3 border border-success border-3 rounded">
+            <div class="text-center bg-success text-light fs-5 py-2 fw-bolder">
+              <i class="ri-book-fill"></i> Rak Buku
+            </div>
+            <div class="search-form-wrapper">
+              <form class="search-form m-3">
+                <div class="mb-3">
+                  <label
+                    for="search-book"
+                    class="form-label fw-bold text-success"
+                    ><i class="ri-search-line"></i> Cari Buku</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control border border-success"
+                    id="search-book"
+                    required
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="border border-success border-1 rounded m-3">
+                    <div
+                      class="text-center bg-success text-light fs-6 py-2 fw-bolder"
+                    >
+                      <i class="ri-book-fill"></i> Buku Belum Dibaca
+                    </div>
+                    <div class="books-wrapper m-3">
+                      <div
+                        class="list-books-to-read"
+                        id="uncompleted-books"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="border border-success border-1 rounded m-3">
+                    <div
+                      class="text-center bg-success text-light fs-6 py-2 fw-bolder"
+                    >
+                      <i class="ri-book-fill"></i> Buku Sudah Dibaca
+                    </div>
+                    <div class="books-wrapper m-3">
+                      <div
+                        class="list-books-have-read"
+                        id="completed-books"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
